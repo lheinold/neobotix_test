@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="neobotix_test" type="neobotix_test_node" respawn="false" name="neobotix_test" output="screen">
+		<rosparam file="$(find neobotix_test)/goals.yaml" command="load" />
+	</node>
+</launch>
